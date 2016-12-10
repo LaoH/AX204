@@ -66,7 +66,7 @@ function create() {
 	for(var i = 0; i < 12; i++) {
 		var star = stars.create(i*70, 0, 'star');
 		star.body.gravity.y = 200;
-		star.body.bounce.y = 0.2 + math.random() + 0.7;
+		star.body.bounce.y = 0.2 + Math.random() + 0.7;
 	}
 
 	var style = {font: "bold 32px Arial", fill: "#fff", boundsAlignH: "center", boundsAlignV: "middle"};
@@ -88,12 +88,12 @@ function update() {
 
 	if (cursors.left.isDown) {
 		player.body.velocity.x = -150;
-		player.animation.play('left');
+		player.animations.play('left');
 	} else if (cursors.right.isDown) {
 		player.body.velocity.x = 150;
-		player.animation.play('right');
+		player.animations.play('right');
 	} else {
-		player.animation.stop();
+		player.animations.stop();
 		player.frame = 4;
 	}
 
