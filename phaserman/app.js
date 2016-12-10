@@ -69,7 +69,7 @@ function create() {
 		star.body.bounce.y = 0.2 + math.random() + 0.7;
 	}
 
-	var style = { font: "bold 32px Arial", fill: "#fff". boundsAlignH: "center", boundsAlignV: "middle"};
+	var style = {font: "bold 32px Arial", fill: "#fff", boundsAlignH: "center", boundsAlignV: "middle"};
 	scorelabel = game.add.text(-60, 0, "your score is: ", style);
 	scoretext = game.add.text(70, 0, score, style);
 	scorelabel.setTextBounds(0, 520, 800, 100);
