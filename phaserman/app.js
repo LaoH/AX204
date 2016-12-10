@@ -15,7 +15,7 @@ function create() {
 	game.physics.startSystem(Phaser.Physics.Arcade);
 	game.add.sprite(0, 0, 'sky');
 	platforms = game.add.physicsGroup();
-	platform.enablebody = true;
+	platforms.enableBody = true;
 
 	var ground = platforms.create(0, game.world.height - 50, 'ground');
 	ground.scale.setTo(2, 2);
