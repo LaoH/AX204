@@ -53,7 +53,7 @@ function create() {
 	enemy3 = game.add.sprite(200, 20, 'baddie');
 		enemy3.animations.add('left', [0,1], true);
 		enemy3.animations.add('right', [2,3], true);
-		game.physics.arcade.enable(enemy1);
+		game.physics.arcade.enable(enemy3);
 		enemy3.body.bounce.y = 0.2;
 		enemy3.body.gravity.y = 500;
 		enemy3.body.collideWorldBounds = true;
@@ -86,7 +86,7 @@ function update() {
 
 	player.body.velocity.x = 0
 
-	if (cursor.left.isDown) {
+	if (cursors.left.isDown) {
 		player.body.velocity.x = -150;
 		player.animation.play('left');
 	} else if (cursors.right.isDown) {
