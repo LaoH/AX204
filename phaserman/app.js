@@ -132,7 +132,7 @@ function update() {
 function collectStar (player, star){
 	star.kill();
 	score = score + 1
-	scoretext.settext(score);
+	scoretext.setText(score);
 	star.stars.create(Math.floor(Math.random()*750), 0, 'star')
 	star.body.gravity.y = 200;
 	star.body.bounce.y = 0.2 + Math.random() * 0.7;
